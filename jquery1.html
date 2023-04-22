@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="e">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aperiam asperi
+        ores veritatis temporibus nisi neque! Libero dolorum ea praesentium accusamus, quos debitis
+        , mollitia, voluptate eveniet repellendus officiis vel natus ad.</div> <br>
+         <button id="bt1">Toggle</button>
+         <button id="bt2">fadeIn</button>
+         <button id="bt3">fadeOut</button>
+         <button id="bt4">slideup</button>
+         <button id="bt5">slidedown</button>
+         <button id="bt6">slidetoggle</button>
+         <button id="bt7">html</button>
+         <button id="bt8">text</button>
+         <button id="bt9">replaceWith</button>
+         <div id="f">Salut monde</div> <button id="bta">Traduire</button>
+    
+    <script src="jquery.js"></script>
+    <script>
+        $('#bta').on('click',function greet() {
+            $('#f').html('hello world');
+        })
+       var a1=document.getElementById('bt1')
+       a1.onclick=()=>{
+        $('#e').toggle();
+       }
+       var a2=document.getElementById('bt2')
+       a2.onclick=()=>{
+        $('#e').fadeIn();
+       }
+       var a3=document.getElementById('bt3')
+       a3.onclick=()=>{
+        $('#e').fadeOut();
+       }
+       var a4=document.getElementById('bt4')
+       a4.onclick=()=>{
+        $('#e').slideUp();
+       }
+       var a5=document.getElementById('bt5')
+       a5.onclick=()=>{
+        $('#e').slideDown();
+       }
+       var a6=document.getElementById('bt6')
+       a6.onclick=()=>{
+        $('#e').slideToggle();
+       }
+    </script>
+</body>
+</html>
